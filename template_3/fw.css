@@ -1,0 +1,46 @@
+:root{
+    --main-color:#2196F3;
+    --main-color-1:#1787e0;
+    --main-transition: 0.3s;
+}
+.header .main-nav  li  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height:72px ;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    transition: var(--main-transition);
+
+}
+.header .main-nav  li  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height:72px ;
+    position: relative;
+    color: black;
+    padding: 0 30px;
+    transition: var(--main-transition);
+
+}
+.header .main-nav  li  a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 0;
+    left: -100%;
+    transition: var(--main-transition);
+}
+.header .main-nav  li  a:hover{
+    color: var(--main-color);
+    background-color: #fafafa;
+}
+.header .main-nav  li  a:hover::before{
+    left: 0;
+}
